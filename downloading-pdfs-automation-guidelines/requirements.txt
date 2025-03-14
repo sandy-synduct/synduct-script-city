@@ -1,0 +1,5 @@
+selenium==4.29.0
+undetected-chromedriver==3.5.5
+wget==3.2
+tqdm==4.67.1
+requests==2.32.3

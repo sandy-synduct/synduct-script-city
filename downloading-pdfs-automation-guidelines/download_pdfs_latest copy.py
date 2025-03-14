@@ -94,6 +94,15 @@ if __name__ == "__main__":
         with open(INPUT_FILE, "r") as infile_read:    # More descriptive variable name
             updated_guidelines_data = json.load(infile_read)
 
+    start_index = 2148
+    end_index = 4296
+    selected_guidelines = updated_guidelines_data[start_index:end_index]
+
+    progress_bar = tqdm(
+        total=len(selected_guidelines), desc="Processing Guidelines", unit="item"
+    )
+
+
     progress_bar = tqdm(
         total=len(updated_guidelines_data), desc="Processing Guidelines", unit="item"
     )
